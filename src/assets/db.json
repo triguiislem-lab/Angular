@@ -1,0 +1,34 @@
+{
+  "membres": [
+    {
+      "cin": "1254",
+      "name": "ousema",
+      "type": "teacher",
+      "createdate": "12/12/2025",
+      "id": "12345"
+    },
+    {
+      "cin": "12",
+      "name": "assil",
+      "type": "student",
+      "createdate": "12/12/2025",
+      "id": "5a6b"
+    }
+  ],
+  "Evt": [
+    {
+      "titre": "test",
+      "datedebut": "2025-03-03T23:00:00.000Z",
+      "datefin": "2025-03-04T23:00:00.000Z",
+      "lieu": "string",
+      "id": "1112"
+    },
+    {
+      "titre": "Hello14",
+      "datedebut": "2025-03-06T23:00:00.000Z",
+      "datefin": "2025-03-14T23:00:00.000Z",
+      "lieu": "hello_world12",
+      "id": "045b"
+    }
+  ]
+}
