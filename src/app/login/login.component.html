@@ -1,0 +1,45 @@
+<div class="login-container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <h2>Connexion</h2>
+  
+      <!-- Affichage d'erreur globale -->
+      <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+      </div>
+  
+      <!-- Champ Email -->
+      <div class="form-group mb-3">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && loginForm.controls['email'].errors }"
+        />
+        <div *ngIf="submitted && loginForm.controls['email'].errors" class="invalid-feedback d-block">
+          <small *ngIf="loginForm.controls['email'].errors?.['required']">Email requis</small>
+          <small *ngIf="loginForm.controls['email'].errors?.['email']">Email invalide</small>
+        </div>
+      </div>
+  
+      <!-- Champ Mot de passe -->
+      <div class="form-group mb-3">
+        <label for="password">Mot de passe</label>
+        <input
+          type="password"
+          id="password"
+          formControlName="password"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && loginForm.controls['password'].errors }"
+        />
+        <div *ngIf="submitted && loginForm.controls['password'].errors" class="invalid-feedback d-block">
+          <small *ngIf="loginForm.controls['password'].errors?.['required']">Mot de passe requis</small>
+          <small *ngIf="loginForm.controls['password'].errors?.['minlength']">Minimum 6 caractères</small>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  padding: 24px;
+  min-width: 320px;
+}
+
+h2[mat-dialog-title] {
+  margin: 0 0 24px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+mat-dialog-content {
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 0;
+}
+
+mat-dialog-actions button {
+  min-width: 100px;
+}
+
+mat-dialog-actions button[color="warn"] {
+  background-color: #f44336;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  :host {
+    padding: 16px;
+    min-width: 280px;
+  }
+
+  mat-dialog-actions {
+    flex-direction: column;
+  }
+
+  mat-dialog-actions button {
+    width: 100%;
+  }
+}

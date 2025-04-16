@@ -1,0 +1,62 @@
+{
+  "members": [
+    {
+      "id": "4d46",
+      "cin": "12345678",
+      "nom": "trigui",
+      "type": "student",
+      "createDate": "10/12/2020"
+    }
+  ],
+  "events": [
+    {
+      "titre": "Exemple",
+      "lieu": "Sfax",
+      "date_debut": "2025-01-31T23:00:00.000Z",
+      "date_fin": "2025-02-13T23:00:00.000Z",
+      "id": "6695"
+    },
+    {
+      "id": "c11c",
+      "titre": "Nouveau évennement",
+      "lieu": "Tunisie",
+      "date_debut": "2025-03-09T23:00:00.000Z",
+      "date_fin": "2025-03-28T23:00:00.000Z"
+    },
+    {
+      "id": "f6f6",
+      "titre": "hgjfj",
+      "lieu": "ghjgfj",
+      "date_debut": "2025-02-28T23:00:00.000Z",
+      "date_fin": "2025-04-15T23:00:00.000Z"
+    },
+    {
+      "id": "569a",
+      "titre": "ghhhhhhhhhhh",
+      "lieu": "fgjfdgh",
+      "date_debut": "2025-03-05T23:00:00.000Z",
+      "date_fin": "2025-03-28T23:00:00.000Z"
+    },
+    {
+      "id": "ad8b",
+      "titre": "ytutu",
+      "lieu": "rrtyrty",
+      "date_debut": "2025-03-30T23:00:00.000Z",
+      "date_fin": "2025-05-22T23:00:00.000Z"
+    },
+    {
+      "id": "9017",
+      "titre": "mlpjlkpl",
+      "lieu": "fgd;mlk",
+      "date_debut": "2025-03-25T23:00:00.000Z",
+      "date_fin": "2025-03-27T23:00:00.000Z"
+    },
+    {
+      "id": "53e5",
+      "titre": "exemple",
+      "lieu": "fghfghf",
+      "date_debut": "2025-03-02T23:00:00.000Z",
+      "date_fin": "2025-03-19T23:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+mat-sidenav-container {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+.nav-icon {
+  margin-right: 16px;
+}
+
+.content {
+  padding: 20px;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.user-profile-button {
+  margin-left: auto;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-icon {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 600px) {
+  mat-sidenav {
+    width: 200px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .username {
+    display: none;
+  }
+}
