@@ -58,5 +58,25 @@
       "date_debut": "2025-03-02T23:00:00.000Z",
       "date_fin": "2025-03-19T23:00:00.000Z"
     }
+  ],
+  "Pub": [
+    {
+      "id": "ca3a",
+      "cin": "14725836",
+      "titre": "hello",
+      "type": "conf",
+      "item": "test",
+      "date": "2025-04-17T23:00:00.000Z",
+      "sourcePDf": "hellowordl"
+    },
+    {
+      "cin": "11125836",
+      "titre": "testEdit",
+      "type": "journal",
+      "item": "edit",
+      "date": "2025-04-18T23:00:00.000Z",
+      "sourcePDf": "testEdit",
+      "id": "1e5c"
+    }
   ]
 }

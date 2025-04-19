@@ -1,0 +1,48 @@
+<mat-dialog-content>
+    <form [formGroup]="form">
+        <h2 mat-dialog-title>{{ 'Ajouter un pub' }}</h2>
+      <mat-form-field appearance="outline">
+        <mat-label>CIN</mat-label>
+        <input matInput placeholder="CIN" formControlName="cin">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Type</mat-label>
+        <mat-select formControlName="type" (selectionChange)="selectedFood = $event.value">
+          <mat-option *ngFor="let option of foods" [value]="option.value">
+            {{ option.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>titre</mat-label>
+        <input matInput placeholder="titre" formControlName="titre">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Item</mat-label>
+        <input matInput placeholder="Item" formControlName="item">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Date</mat-label>
+        <input matInput [matDatepicker]="picker" placeholder="Choisir une date" formControlName="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Source PDF</mat-label>
+        <input matInput placeholder="URL du PDF" formControlName="sourcePDf">
+      </mat-form-field>
+  
+    </form>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions align="end">
+    <button mat-button (click)="onCancel()">Annuler</button>
+    <button mat-raised-button color="primary" (click)="onSubmit()">
+      {{ isEditMode ? 'Modifier' : 'Ajouter' }}
+    </button>
+  </mat-dialog-actions>
+  

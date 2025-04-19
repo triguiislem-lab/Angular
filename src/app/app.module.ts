@@ -37,6 +37,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { EventFormComponent } from './events/event-form/event-form.component';
 import { firebaseConfig } from './environement';
 import { LoginComponent } from './login/login.component';
+import { PubComponent } from './pub/pub.component';
+import { ModalPubComponent } from './modal-pub/modal-pub.component';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,8 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     EventFormComponent,
     LoginComponent,
+    PubComponent,
+    ModalPubComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(firebaseConfig),
@@ -76,6 +81,7 @@ import { LoginComponent } from './login/login.component';
     MatNativeDateModule,
     MatSortModule,
     MatPaginatorModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

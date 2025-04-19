@@ -6,6 +6,7 @@ import { ArticlesComponent } from './articles/articles.component';
 import { EventsComponent } from './events/events.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { PubComponent } from './pub/pub.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,7 @@ const routes: Routes = [
     path: 'events',
     component: EventsComponent,
   },
+  {path:"pub",component:PubComponent},
   { path: 'login', component: LoginComponent }, // route vers la page de connexion
 
   // Redirection par défaut (optionnel)

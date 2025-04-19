@@ -12,6 +12,8 @@ import { Router } from '@angular/router';
 export class TemplateComponent {
   @ViewChild('drawer') drawer!: MatSidenav;
   isMobile = false;
+  inLogin = false;
+  username: string = 'Utilisateur';
 
   constructor(private breakpointObserver: BreakpointObserver,private authService: AuthService,private router: Router) {
     this.breakpointObserver
@@ -20,6 +22,15 @@ export class TemplateComponent {
         this.isMobile = result.matches;
         if (!this.isMobile && this.drawer) {
           this.drawer.close();
+        }
+      });
+      this.router.events.subscribe(() => {
+       this.inLogin = this.router.url.includes('/login');
+       console.log("isLogin",this.inLogin);
+      });
+      this.authService.getCurrentUser().subscribe(user => {
+        if (user) {
+          this.username = user.displayName || user.email || 'Utilisateur';
         }
       });
     
@@ -36,4 +47,5 @@ export class TemplateComponent {
 
     
   }
+  
 }
