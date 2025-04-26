@@ -40,6 +40,8 @@ import { LoginComponent } from './login/login.component';
 import { PubComponent } from './pub/pub.component';
 import { ModalPubComponent } from './modal-pub/modal-pub.component';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -82,6 +84,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatSortModule,
     MatPaginatorModule,
     MatSelectModule,
+    MatCardModule,
+    MatIconModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
