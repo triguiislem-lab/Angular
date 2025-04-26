@@ -56,6 +56,22 @@
             [options]="chartOptions">
     </canvas>
   </div>
+  <div class="chart-wrapper" style="width: 250px; height: 450px; position: relative;">
+    <canvas baseChart
+            [type]="'bar'"
+            [datasets]="chartDataBar"
+            [labels]="chartLabelBar"
+            [options]="chartOptions">
+    </canvas>
+  </div>
+  <div class="chart-wrapper" style="width: 250px; height: 450px; position: relative;">
+    <canvas baseChart
+            [type]="'line'"
+            [datasets]="chartDataLine"
+            [labels]="chartLabelLine"
+            [options]="chartOptions">
+    </canvas>
+  </div>
 
 
 

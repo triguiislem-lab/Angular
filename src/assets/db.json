@@ -5,28 +5,50 @@
       "cin": "12345678",
       "nom": "trigui",
       "type": "student",
-      "createDate": "10/12/2020"
+      "createDate": "10/12/2020",
+      "tabPub": [
+        {
+          "cin": "14725836",
+          "titre": "hello",
+          "type": "conf",
+          "item": "test",
+          "date": "2025-04-17T23:00:00.000Z",
+          "sourcePDf": "hellowordl",
+          "id": "ca3a"
+        }
+      ]
     },
     {
-      "id": "6313",
       "cin": "147258369",
-      "nom": "test hello",
+      "nom": "test",
       "type": "teacher",
-      "createDate": "15/20/24"
+      "createDate": "15/20/24",
+      "id": "6313"
     },
     {
-      "id": "fd52",
       "cin": "258369147",
-      "nom": "hello world ",
+      "nom": "hello",
       "type": "student",
-      "createDate": "14/02/24"
+      "createDate": "14/02/24",
+      "id": "fd52"
     },
     {
       "id": "f240",
       "cin": "Professor",
       "nom": "pro",
       "type": "teacher",
-      "createDate": "14/02/20"
+      "createDate": "14/02/20",
+      "tabPub": [
+        {
+          "cin": "11125836",
+          "titre": "testEdit",
+          "type": "journal",
+          "item": "edit",
+          "date": "2025-04-18T23:00:00.000Z",
+          "sourcePDf": "testEdit",
+          "id": "1e5c"
+        }
+      ]
     }
   ],
   "events": [
@@ -66,18 +88,18 @@
       "id": "ad8b"
     },
     {
-      "id": "9017",
-      "titre": "mlpjlkpl",
-      "lieu": "fgd;mlk",
+      "titre": "lecture de test",
+      "lieu": "paris",
       "date_debut": "2025-03-25T23:00:00.000Z",
-      "date_fin": "2025-03-27T23:00:00.000Z"
+      "date_fin": "2025-03-27T23:00:00.000Z",
+      "id": "9017"
     },
     {
-      "id": "53e5",
-      "titre": "exemple",
-      "lieu": "fghfghf",
+      "titre": "stage",
+      "lieu": "toulouse",
       "date_debut": "2025-03-02T23:00:00.000Z",
-      "date_fin": "2025-03-19T23:00:00.000Z"
+      "date_fin": "2025-03-19T23:00:00.000Z",
+      "id": "53e5"
     }
   ],
   "Pub": [
@@ -98,6 +120,15 @@
       "date": "2025-04-18T23:00:00.000Z",
       "sourcePDf": "testEdit",
       "id": "1e5c"
+    },
+    {
+      "id": "64cc",
+      "cin": "14725836",
+      "titre": "testtt",
+      "type": "journal",
+      "item": "helllooo",
+      "date": "2025-04-18T23:00:00.000Z",
+      "sourcePDf": "testtt"
     }
   ]
 }
