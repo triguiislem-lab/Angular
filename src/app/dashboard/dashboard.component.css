@@ -1,0 +1,42 @@
+.dashboard-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .dashboard-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dashboard-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .dashboard-item h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #3f51b5;
+  }
+  
+  .dashboard-item h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .charts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* or space-between, space-around */
+    align-items: center;
+    flex-wrap: wrap; /* optional: allows wrapping on smaller screens */
+    gap: 20px; /* optional: spacing between charts */
+  }
+  
+  

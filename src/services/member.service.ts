@@ -50,4 +50,5 @@ export class MemberService {
     return this.http.delete<void>(`${this.apiUrl}/${id}`)
       .pipe(catchError(this.handleError));
   }
+
 }

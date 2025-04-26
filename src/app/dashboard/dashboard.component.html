@@ -1,12 +1,64 @@
 <mat-card class="dashboard-card">
-    <mat-card-header>
+  <mat-card-header>
+    <mat-icon>dashboard</mat-icon>
+    <mat-card-title>Dashboard</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content class="dashboard-content">
+    <div class="dashboard-item">
       <mat-icon>library_books</mat-icon>
-      <mat-card-title>Publications</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <h2>{{ publicationCount }}</h2>
-    </mat-card-content>
-  </mat-card>
+      <div>
+        <h3>Publications</h3>
+        <h2>{{ publicationCount }}</h2>
+      </div>
+    </div>
+    <div class="dashboard-item">
+      <mat-icon>group</mat-icon>
+      <div>
+        <h3>Members</h3>
+        <h2>{{ memberCount }}</h2>
+      </div>
+    </div>
+    <div class="dashboard-item">
+      <mat-icon>event</mat-icon>
+      <div>
+        <h3>Événements</h3>
+        <h2>{{ eventCount }}</h2>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
 
-  
+
+<div class="charts-container">
+  <div class="chart-wrapper" style="width: 500px; height: 500px; position: relative;">
+    <canvas baseChart
+            [type]="'line'"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions">
+    </canvas>
+  </div>
+
+  <div class="chart-wrapper" style="width: 250px; height: 450px; position: relative;">
+    <canvas baseChart
+            [type]="'pie'"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions">
+    </canvas>
+  </div>
+  <div class="chart-wrapper" style="width: 250px; height: 450px; position: relative;">
+    <canvas baseChart
+            [type]="'doughnut'"
+            [datasets]="chartDatadoughnut"
+            [labels]="chartLabelsdoughnut"
+            [options]="chartOptions">
+    </canvas>
+  </div>
+
+
+
+</div>
+
   
